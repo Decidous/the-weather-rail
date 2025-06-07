@@ -18,3 +18,4 @@ Some extra research has been put into how we will source and get materials for t
 
 Member: Decidous, Evan
 
+Our goal: Make the ring go up and pass through the two levels of guy lines holding up the weather rail.
