@@ -16,6 +16,35 @@ Some extra research has been put into how we will source and get materials for t
 
 ## June 7: Design Meeting
 
+Log-03: 2 hours, 40 minutes
+
 Member: Decidous, Evan
 
 Our goal: Make the ring go up and pass through the two levels of guy lines holding up the weather rail.
+
+We want to have a couple of things that need to move.
+* Camera: Capture light pollution & cloud coverage at an angled view
+* (Optional) Directional Antenna Setup: Wi-Fi relay unit pointing towards source based on GPS coordinates + other antenna to current device
+* Solar Panels: Automatically charge up onboard battery
+* Anemometer: Accurately measure wind direction & speed (needs to change orientation if wind is blocked by the pole)
+
+Non-moving parts:
+* PCB: Main weather measuring tools
+  * Humidity
+  * Temperature
+  * Air Quality
+* Total Rain Sensor
+* Soil Sampler
+  * Moisture Level
+* Battery
+
+Design Roadmap:
+* Sourcing parts
+* The PCB
+* Weather Ring
+* Motor
+
+![Screenshot from 2025-06-07 08-03-41](https://github.com/user-attachments/assets/e51ba312-24f4-4c4c-aef4-2787b678b83b)
+
+![Screenshot from 2025-06-07 08-02-09](https://github.com/user-attachments/assets/60e50c07-3812-4a70-ba0f-7afceeda7bf0)
+
