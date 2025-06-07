@@ -17,18 +17,18 @@ Some extra research has been put into how we will source and get materials for t
 ## June 7: Design Meeting
 
 Log-03: 2 hours, 40 minutes
+Members: Decidous, Evan
 
-Member: Decidous, Evan
+**Our goal**: Use a motor to move the ring up the rail with a pulley
+THEN, have stationary & moving instruments
 
-Our goal: Make the ring go up and pass through the two levels of guy lines holding up the weather rail.
-
-We want to have a couple of things that need to move.
+We want to have a couple of things that need to **move**.
 * Camera: Capture light pollution & cloud coverage at an angled view
 * (Optional) Directional Antenna Setup: Wi-Fi relay unit pointing towards source based on GPS coordinates + other antenna to current device
 * Solar Panels: Automatically charge up onboard battery
 * Anemometer: Accurately measure wind direction & speed (needs to change orientation if wind is blocked by the pole)
 
-Non-moving parts:
+**Non-moving parts**:
 * PCB: Main weather measuring tools
   * Humidity
   * Temperature
@@ -43,6 +43,8 @@ Design Roadmap:
 * The PCB
 * Weather Ring
 * Motor
+
+We have decided to create a custom slip ring design that will use thin brass bendable sheets to line the inside and outside parts of the ring with +3.3v, GND, and (maybe) DATA. This will allow us to keep communications going even on a spinning contraption. The inside ring will not rotate, but the outside ring has gearing that will. A motor will spin the entire ring, while a secondary servo will orient the different components with an attachment arm.
 
 ![Screenshot from 2025-06-07 08-03-41](https://github.com/user-attachments/assets/e51ba312-24f4-4c4c-aef4-2787b678b83b)
 
