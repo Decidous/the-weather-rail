@@ -16,7 +16,7 @@ Some extra research has been put into how we will source and get materials for t
 
 ## June 7: Design Meeting
 
-Log-03: 2 hours, 40 minutes
+Log-03: 3 hours, 20 minutes
 Members: Decidous, Evan
 
 **Our goal**: Use a motor to move the ring up the rail with a pulley
@@ -50,3 +50,25 @@ We have decided to create a custom slip ring design that will use thin brass ben
 
 ![Screenshot from 2025-06-07 08-02-09](https://github.com/user-attachments/assets/60e50c07-3812-4a70-ba0f-7afceeda7bf0)
 
+## June 7: Electronic Sourcing
+
+Log-04: 2 hours
+Member: Evan
+
+There are many types of sensors in typical weather stations. The most basic being temperature and humidity. There are also some extra, which add greatly to weather estimation. This includes barometers, and anemometers. The first allowing storm prediction from drops in pressure, and the latter showing how chilly it is and the direction to take cover.
+
+All of the sensors above I've found the equivalent for in chips on digikey. One of the points I had was to measure the pollution near roads to decide how safe it was to open building windows in certain city environments. This requires chemical sensors which degrade over time, and are quite expensive. The sensor for detecting carbon monoxide and NO2 costs $20, and the second sensor to detect CO2 costing another $20. These are quite expensive while not long lasting. The average life expectancy for one of the sensors I searched up was about 2 years.
+
+In addition, I've sourced a electric heating pad which can be used inside of the enclosure to maintain temperature throughout the chilly nights. This should reduce humidity, and keep the sensors working optimally. I've decided to sectionalize the board into different areas including the heated area, direct opening (for the smoke & dust detector), & fully enclosed + heated area (microcontroller regulated environment).
+
+Here's an overview of the features I can do with all of the sensors sourced so far
+* Air Quality Sensors:
+ * **CO2 sensor**: Dangerous levels of CO2 warning inside buildings. Can be used to diagnose road pollution as well.
+ * **NO2 + Carbon Monoxide**: Can warn dangerous levels of carbon monoxide (poisoness) for example inside a closed garage with a car running. It can be used to diagnose road pollution
+ * **Particulate Sensor**: Can monitor air quality from smoke and dust particulates either from the desert, storms, or wildfires.
+* Weather Sensors
+ * **Camera**: Can diagnose light pollution by comparing star brightness to the sky. Read cloud coverage & cloud darkness (how full of water they are) all using computer vision algorithms & external server processing.
+ * **Barometer**: Detect altitude and perform storm prediction from decreasing air pressure
+ * **Temperature & Humidity**: Detects how cold it is & how much water is in the air
+
+I'm also still investigating soil sensors which I could put on a rod that goes into the earth when the instrument ring is at the bottom. This could help give readings on how muddy the terrain is, or if the soil has reached maximum water capacity and will flood.
